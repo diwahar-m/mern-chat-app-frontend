@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&family=Work+Sans:wght@300&display=swap');
+
 .App {
-  text-align: center;
+  min-height: 100vh; 
+  background-image: url("./background.png");
+  background-size: cover;
+  background-position: center;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +41,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar{
+  width: 0px;
 }
