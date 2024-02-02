@@ -10,6 +10,7 @@ import { useContext } from 'react';
 const ChatPage = () => {
 
   const {user}=ChatState();
+  const [fetchAgain, setFetchAgain] = useState(false);
   
   useEffect(()=>{
    console.log(user);
@@ -22,11 +23,11 @@ const ChatPage = () => {
         display='flex'
         justifyContent='space-between'
         w='100%'
-        h='91.5h'
+        h={'91.5vh'}
         p='10px'
       >
-        {user && <MyChats/>}
-        {user && <ChatBox/>}
+        {user && <MyChats fetchAgain={fetchAgain} />}
+        {user && <ChatBox fetchAgain={fetchAgain} setFetchAgain={setFetchAgain}/>}
       </Box>
     </div>
   )

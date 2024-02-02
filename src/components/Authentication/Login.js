@@ -3,10 +3,7 @@ import { VStack, FormControl, FormLabel, Input, InputGroup, InputRightElement, B
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
-
-
 const Login = () => {
-
     
     const [show, setShow] = useState(false);
     const [email, setMail] = useState();
